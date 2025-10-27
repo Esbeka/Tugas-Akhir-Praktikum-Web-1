@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Subakara</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <h1 class="header-title">Portofolio Subakara 💻</h1>
+    </header>
+
+    <div class="container">
+        
+        <main class="main-content">
+
+            <section id="about" class="artikel-card">
+                <div class="profile-info">
+                    <!-- Catatan: Pastikan gambar 'merah.jpeg' ada di folder yang sama -->
+                    <img src="merah.jpeg" alt="Foto Surya Bagaskara" class="profile-photo">
+                    <h2 class="name-tag">Surya Bagaskara</h2>
+                </div>
+                
+                <h3 class="artikel-judul">About Me</h3>
+                <div class="artikel-isi">
+                    <p>
+                        Halo! Saya Surya Bagaskara. Saya adalah Mahasiswa Informatika yang saat ini sedang aktif dalam Praktikum Pengolahan Web. Saya antusias dalam mempelajari pengembangan web, khususnya di bidang front-end development.
+                    </p>
+                    <p>
+                        Selain fokus pada dunia pemrograman, saya memiliki passion besar untuk menjadi seorang Game Developer. Saya sedang dalam proses mempelajari dasar-dasar pengembangan game.
+                    </p>
+                    <p>
+                        Kreativitas saya juga tertuang melalui Digital Arts, dan saya terus berusaha meningkatkan kemampuan menggambar digital saya untuk menghasilkan aset visual yang menarik.
+                    </p>
+                    <p class="japanese-greeting">
+                        どうぞ、よろしくお願いします (Douzo, yoroshiku onegaishimasu)
+                        <br>
+                        Senang berkenalan dengan Anda.
+                    </p>
+                    <a href="#kontak-form-area" class="btn-selengkapnya">Hubungi Saya</a>
+                </div>
+            </section>
+            
+            <!-- Saya Hapus Bagian Proyek (Artikel Kedua) agar fokus pada tata letak akhir -->
+            
+        </main>
+
+        <aside class="sidebar-layout">
+            
+            <div class="sidebar-box">
+                <h4><i class="fas fa-tools"></i> Keahlian (Skills)</h4>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>Basic JavaScript</li>
+                    <li>Pengolahan Web</li>
+                    <li>UI/UX Dasar</li>
+                    <li>Pixel Arts</li>
+                    <li>Dasar Game Development</li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-box kategori-box">
+                <h4><i class="fas fa-link"></i> Media Sosial & Kontak</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/surya.bagaskara.94064?locale=id_ID" target="_blank"><i class="fab fa-facebook"></i> Facebook Profile</a></li>
+                    <li><a href="https://www.instagram.com/subakara295/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://github.com/Esbeka" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><i class="fas fa-envelope"></i> Email: subakara295@email.com</li>
+                </ul>
+            </div>
+
+        </aside>
+
+    </div> 
+    
+    <!-- Bagian Form Kontak Baru (Disederhanakan) -->
+    <section id="kontak-form-area">
+        <div class="form-container">
+            <!-- Judul Kontak Saya -->
+            <h1>Kontak Saya</h1>
+            
+            <form action="#" method="POST">
+                <!-- Nama Lengkap -->
+                <label for="nama">Nama Lengkap <span class="required">*</span></label>
+                <input type="text" id="nama" name="nama" required placeholder="Masukkan Nama Lengkap Anda">
+                
+                <!-- Email -->
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="Masukkan Email Anda">
+                
+                <!-- Nomor Telepon -->
+                <label for="telepon">Nomor Telepon</label>
+                <input type="tel" id="telepon" name="telepon" placeholder="Masukkan Nomor Telepon Anda">
+                
+                <!-- Lokasi (Dropdown Baru) -->
+                <label for="lokasi">Lokasi</label>
+                <select id="lokasi" name="lokasi">
+                    <option value="">Pilih Kota Asal</option>
+                    <option value="jakarta">Jakarta</option>
+                    <option value="surabaya">Surabaya</option>
+                    <option value="bandung">Bandung</option>
+                    <option value="medan">Medan</option>
+                    <option value="semarang">Semarang</option>
+                </select>
+
+                <!-- Pesan -->
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan atau pertanyaan Anda di sini..."></textarea>
+                
+                <!-- Tombol Kirim -->
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Portofolio Subakara | Mahasiswa Informatika.</p>
+    </footer>
+
+</body>
+</html>
